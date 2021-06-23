@@ -1,0 +1,55 @@
+~~~~~~~~~~~ASSIGNMMENT 1~~~~~~~~~~~~~~~~~~~~
+
+use employee;
+create table S
+(
+sname varchar(20),
+status boolean,
+city varchar(44)
+);
+
+insert into s values ("ram",10,"kolkatta"),("sham",20,"Amravati"),
+("teju",30,"amravati"),("baku",40,"london"),("mayank",50,"london");
+
+select * from s;
+select  sname from s;
+select * from s where city="london";
+select * from s where city="Amravati" or city="london";
+select * from s where status >=20;
+#select * from s where city  not between "london";
+desc s;
+create table P
+(
+pname varchar(20),
+color varchar(50),
+weight int,
+city varchar(44)
+);
+insert into p values ("Monu","blue",50,"Sangli"),
+("sonu","white",44,"kolhapur"),
+("tinu","black",33,"Akola"),("bike","red",44,"morshi"),
+("bike","red",33,"morshi");
+select * from p;
+select pname,color from p where city="Sangli";
+select pname,weight from p where weight >=33 and weight<= 44;
+select pname ,weight from p where weight between 33 and 44;
+desc p;
+create table j
+(
+jname varchar(40),
+city varchar(30)
+);
+insert into j values ("ram","Baramati"),("sham","Dhule")
+,("kamal","athens"),("miyan","pune"),("sham","athens");
+select * from j;
+select * from j where city="athens";
+desc j;
+create table spj
+(
+qty int
+);
+desc spj;
+
+
+
+
